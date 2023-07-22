@@ -1,29 +1,18 @@
 import React, {useState} from 'react';
 import classnames from "classnames";
 import Icon from "../../components/icon/icon";
-
-import cl from "./Guest.module.css";
-import logo from "../../img/logo.png"
-import css from '../../img/guest/css.png'
-import me from '../../img/guest/me.jpg'
-import git from '../../img/guest/git.png'
-import js from '../../img/guest/js.png'
-import html from '../../img/guest/html.png'
-import hh from '../../img/guest/hh.png'
-import react from '../../img/guest/react.png'
-import laptop from '../../img/guest/laptop.jpg'
-import text from "../../img/guest/text.svg"
-import {Link} from "react-router-dom";
+import {Link} from "react-router-dom"
+import cl from "./Guest.module.css"
+import {images} from "../../img/guest/images";
 
 
 const Guest = () => {
     const [toggle, setToggle] = useState(false)
 
-
     return (
         <>
             <header className={cl.header}>
-                <img src={logo} alt={"logo"}/>
+                <img src={images.logo} alt={"logo"}/>
                 <h1>Crystalize.dev</h1>
 
                 <a href={"#home"}>Home</a>
@@ -48,7 +37,7 @@ const Guest = () => {
                     <div className={cl.container}>
                         <div className={cl.main}>
                             <div className={cl.me}>
-                                <img alt={"me"} src={me}/>
+                                <img alt={"me"} src={images.me}/>
                             </div>
 
                             <div className={cl.text}>
@@ -57,10 +46,10 @@ const Guest = () => {
 
                                 <div className={cl.links}>
                                     <a href="https://hh.ru/resume/a2c6b2b4ff09b9e7e90039ed1f387057344159"
-                                       target="_blank" rel="noreferrer"><img alt={"hh"} src={hh}/></a>
+                                       target="_blank" rel="noreferrer"><img alt={"hh"} src={images.hh}/></a>
                                     <a href="https://github.com/crystalize-dev" target="_blank" rel="noreferrer"><img
                                         alt={"git"}
-                                        src={git}/></a>
+                                        src={images.git}/></a>
                                 </div>
                             </div>
                         </div>
@@ -69,10 +58,10 @@ const Guest = () => {
                             <p>Tech Stack</p>
                             <hr/>
                             <div className={cl.skillsImg}>
-                                <img alt={"html"} src={html}/>
-                                <img alt={"css"} src={css}/>
-                                <img alt={"js"} src={js}/>
-                                <img alt={"react"} src={react}/>
+                                <img alt={"html"} src={images.html}/>
+                                <img alt={"css"} src={images.css}/>
+                                <img alt={"js"} src={images.js}/>
+                                <img alt={"react"} src={images.react}/>
                             </div>
                         </div>
                     </div>
@@ -82,10 +71,10 @@ const Guest = () => {
                     <div className={cl.container}>
                         <div className={cl.aboutBlock}>
                             <div className={cl.aboutImg}>
-                                <img alt={"laptop"} src={laptop}/>
+                                <img alt={"laptop"} src={images.laptop}/>
 
                                 <div className={cl.roundRotate}>
-                                    <img alt={"text"} src={text}/>
+                                    <img alt={"text"} src={images.text}/>
                                     <Icon>laptop_mac</Icon>
                                 </div>
                             </div>
@@ -126,7 +115,7 @@ const Guest = () => {
                                     <div className={cl.tag}>SCSS</div>
                                 </div>
                                 <div className={cl.options}>
-                                    <a>Code <img alt={"git"} src={git}/></a>
+                                    <a>Code <img alt={"git"} src={images.git}/></a>
                                     <Link>Live Demo <Icon>open_in_new</Icon></Link>
                                 </div>
                             </div>
@@ -146,7 +135,7 @@ const Guest = () => {
                                     <div className={cl.tag}>SCSS</div>
                                 </div>
                                 <div className={cl.options}>
-                                    <a>Code <img alt={"git"} src={git}/></a>
+                                    <a>Code <img alt={"git"} src={images.git}/></a>
                                     <Link>Live Demo <Icon>open_in_new</Icon></Link>
                                 </div>
                             </div>
@@ -166,7 +155,7 @@ const Guest = () => {
                                     <div className={cl.tag}>SCSS</div>
                                 </div>
                                 <div className={cl.options}>
-                                    <a>Code <img alt={"git"} src={git}/></a>
+                                    <a>Code <img alt={"git"} src={images.git}/></a>
                                     <Link>Live Demo <Icon>open_in_new</Icon></Link>
                                 </div>
                             </div>
@@ -186,7 +175,7 @@ const Guest = () => {
                                     <div className={cl.tag}>SCSS</div>
                                 </div>
                                 <div className={cl.options}>
-                                    <a>Code <img alt={"git"} src={git}/></a>
+                                    <a>Code <img alt={"git"} src={images.git}/></a>
                                     <Link>Live Demo <Icon>open_in_new</Icon></Link>
                                 </div>
                             </div>
@@ -224,10 +213,10 @@ const Guest = () => {
 
                         <div className={cl.links}>
                             <a href="https://hh.ru/resume/a2c6b2b4ff09b9e7e90039ed1f387057344159"
-                               target="_blank" rel="noreferrer"><img alt={"hh"} src={hh}/></a>
+                               target="_blank" rel="noreferrer"><img alt={"hh"} src={images.hh}/></a>
                             <a href="https://github.com/crystalize-dev" target="_blank" rel="noreferrer"><img
                                 alt={"git"}
-                                src={git}/></a>
+                                src={images.git}/></a>
                         </div>
                     </div>
                 </footer>
