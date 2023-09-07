@@ -3,14 +3,12 @@ import {
     createBrowserRouter, createRoutesFromElements, Route,
     RouterProvider,
 } from "react-router-dom";
-import Guest from "../pages/Guest/Guest";
+import Main from "../pages/Main/Main";
 
 
 const router = createBrowserRouter(createRoutesFromElements(
     <Route>
-        <Route path="/" element={<Guest />}>
-
-        </Route>
+        <Route index element={<Main />}/>
     </Route>
 ));
 

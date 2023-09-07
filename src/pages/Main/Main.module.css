@@ -1,0 +1,27 @@
+.content{
+    margin-top: 80px;
+
+    width: 100%;
+    height: calc(100vh - 80px);
+
+    overflow-y: scroll;
+}
+.content::-webkit-scrollbar {
+    width: 10px;
+
+    background: white;
+}
+.content::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+    border-radius: 10px;
+    border: 2px solid white
+}
+
+@media (max-width: 980px) {
+    .content {
+        scrollbar-width: none;
+    }
+    .content::-webkit-scrollbar {
+        display: none;
+    }
+}

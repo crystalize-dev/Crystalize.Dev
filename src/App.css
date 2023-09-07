@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
 }
 
-img, a, span {
+img, a, span, i {
     user-select: none;
 }
 
@@ -17,4 +17,8 @@ img, a, span {
 
     width: 100%;
     height: 100%;
+}
+
+html {
+    font-size: 62.5%;
 }

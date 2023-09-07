@@ -1,0 +1,142 @@
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+
+    align-items: center;
+    justify-content: center;
+}
+.me {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    animation: morph 8s ease-in-out infinite;
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.1);
+}
+.me img {
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: inherit;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    color: var(--font-color-gray);
+    width: 60%;
+}
+.text h1 {
+    font-size: 6rem;
+}
+.text p {
+    max-width: 70%;
+    font-size: 1.6rem;
+}
+.links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.links img {
+    width: 35px;
+    filter: grayscale(100) brightness(40%);
+    transition: all 0.3s ease 0s;
+}
+.links img:hover {
+    filter: grayscale(0);
+}
+.skills {
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 0 20px;
+
+    font-weight: 600;
+    white-space: nowrap;
+}
+.skills p {
+    font-size: 1.6rem;
+}
+.line {
+    height: 50px;
+
+    border: 1px solid var(--font-color-gray);
+    border-radius: 50px;
+}
+.skills img {
+    min-width: 55px;
+    height: 55px;
+}
+.skillsImg {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: inherit;
+    width: 100%;
+}
+
+@media (max-width: 980px) {
+    .main {
+        flex-direction: column;
+        padding-top: 40px;
+        gap: 40px;
+    }
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+    .text h1 {
+        font-size: 3.8rem;
+    }
+    .text p {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+    .links {
+        justify-content: center;
+    }
+    .skills {
+        margin: 50px auto 0 auto;
+        flex-direction: column;
+    }
+    .line {
+        height: unset;
+        width: 30%;
+    }
+    .skills img {
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+    }
+    .skillsImg {
+        flex-wrap: nowrap;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}

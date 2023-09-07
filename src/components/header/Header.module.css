@@ -1,0 +1,109 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80px;
+    min-height: 80px;
+
+    user-select: none;
+
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    z-index: 998;
+    transition: all 0.2s ease 0s;
+}
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+    margin: 0 auto;
+    max-width: 900px;
+    height: 100%;
+    width: 100%;
+}
+.headerContainer > *:nth-child(3), .header > *:nth-child(7) {
+    margin-left: auto;
+}
+.header img {
+    height: 50%;
+}
+.header h1 {
+    font-size: 2.5rem;
+}
+.header a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: black;
+    border-bottom: 2px solid white;
+
+    transition: all 0.1s ease 0s;
+}
+.header a:hover {
+    color: var(--color-accent);
+}
+.header i {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modalMobile {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+
+    position: absolute;
+    top: 0;
+    left: -100%;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: white;
+    z-index: 999;
+
+    transition: all 0.3s ease 0s;
+}
+.modalMobile i {
+    position: absolute;
+    right: 35px;
+    top: 25px;
+
+    font-weight: bold;
+    font-size: 36px;
+
+    cursor: pointer;
+}
+.modalMobile a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+@media (max-width: 980px) {
+    .header {
+        padding: 0 8%;
+    }
+    .header i {
+        display: unset;
+        margin-left: auto;
+    }
+    .header a {
+        display: none;
+    }
+
+    .modalMobile {
+        display: flex;
+        height: 100vh !important;
+    }
+    .show {
+        left: 0;
+    }
+}

@@ -1,0 +1,82 @@
+.contact {
+    height: 300px;
+    min-height: 300px;
+}
+.contact h2 {
+    font-size: 1.8rem;
+    color: var(--color-accent);
+}
+.contact h1 {
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--font-color-gray);
+}
+.buttonArea {
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    width: 100%;
+}
+.button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.button i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--color-accent);
+    font-size: 2.5rem;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+}
+.buttonText h1 {
+    font-size: 2rem;
+}
+.buttonText a {
+    text-decoration: none;
+    color: var(--font-color-gray);
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+
+    font-size: 1.6rem;
+}
+.buttonText a:hover {
+    color: var(--color-accent);
+}
+
+@media (max-width: 980px) {
+    .contact {
+        height: fit-content;
+        max-height: unset;
+
+        padding: 40px 0;
+    }
+    .contact h2, .contact h1 {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .buttonArea {
+        margin: 60px auto;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+        width: fit-content;
+    }
+    .button:nth-child(2) {
+        margin-left: -40px;
+    }
+}
