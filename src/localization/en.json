@@ -1,0 +1,28 @@
+{
+  "lang": "Language",
+  "langName": "English",
+
+  "header.links.home": "Home",
+  "header.links.about": "About",
+  "header.links.proj": "Projects",
+  "header.links.contact": "Contact",
+
+  "general.h1": "Front-End React Developer",
+  "general.p": "Hi, I'm Igor Andreev. A Front-end React Developer based in Moscow",
+  "general.tech": "Tech Stack",
+
+  "about.h2": "ABOUT ME",
+  "about.h1": "A dedicated Front-end Developer based in Moscow",
+  "about.p": "As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript and React. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications",
+
+  "projects.h2": "PORTFOLIO",
+  "projects.h1": "Each project is a unique piece of development",
+
+  "card.code": "Code",
+  "card.live": "Live Demo ",
+
+  "contact.h1": "CONTACT",
+  "contact.h2": "Don't be shy! Hit me up! ",
+
+  "footer.copy": "All rights are reserved"
+}

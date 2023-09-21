@@ -4,14 +4,14 @@
 }
 .contact h2 {
     font-size: 1.8rem;
-    color: var(--color-accent);
+    color: var(--font-color-gray);
 }
 .contact h1 {
     font-size: 2.4rem;
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--font-color-gray);
+    color: var(--color-accent);
 }
 .buttonArea {
     margin-top: 20px;

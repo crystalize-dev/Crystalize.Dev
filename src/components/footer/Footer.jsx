@@ -1,13 +1,16 @@
 import React from 'react';
 import cl from "./Footer.module.css"
 import {images} from "../../img/main/images";
+import {useTranslation} from "i18nano";
 
 
 const Footer = () => {
+    const text = useTranslation()
+
     return (
         <footer className={cl.footer}>
             <div className={cl.container}>
-                <h1>Copyright © 2023. All rights are reserved</h1>
+                <h1>Copyright © 2023. {text('footer.copy')}</h1>
 
                 <div className={cl.links}>
                     <a href="https://hh.ru/resume/a2c6b2b4ff09b9e7e90039ed1f387057344159"

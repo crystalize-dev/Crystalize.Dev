@@ -1,13 +1,16 @@
 import React from 'react';
 import cl from "./Contcat.module.css"
-import MySection from "../../../components/section/MySection";
+import MySection from "../../components/section/MySection";
+import {useTranslation} from "i18nano";
 
 
 const Contact = ({id}) => {
+    const text = useTranslation()
+
     return (
         <MySection className={cl.contact} id={id}>
-            <h2>CONTACT</h2>
-            <h1>Don't be shy! Hit me up! <i className="fa-solid fa-chevrons-down"></i></h1>
+            <h1>{text('contact.h1')}<i className="fa-solid fa-chevrons-down"></i></h1>
+            <h2>{text('contact.h2')}</h2>
 
             <div className={cl.buttonArea}>
                 <div className={cl.button}>

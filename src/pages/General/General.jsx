@@ -1,10 +1,13 @@
 import React from 'react';
 import cl from "./General.module.css"
-import {images} from "../../../img/main/images";
-import MySection from "../../../components/section/MySection";
+import {images} from "../../img/main/images";
+import MySection from "../../components/section/MySection";
+import {useTranslation} from "i18nano";
 
 
 const General = ({id}) => {
+    const text = useTranslation()
+
     return (
         <MySection id={id}>
             <div className={cl.main}>
@@ -13,8 +16,8 @@ const General = ({id}) => {
                 </div>
 
                 <div className={cl.text}>
-                    <h1>Front-End React Developer</h1>
-                    <p>Hi, I'm Igor Andreev. A passionate Front-end React Developer based in Moscow</p>
+                    <h1>{text('general.h1')}</h1>
+                    <p>{text('general.p')}</p>
 
                     <div className={cl.links}>
                         <a href="https://hh.ru/resume/a2c6b2b4ff09b9e7e90039ed1f387057344159"
@@ -27,13 +30,13 @@ const General = ({id}) => {
             </div>
 
             <div className={cl.skills}>
-                <p>Tech Stack</p>
+                <p>{text('general.tech')}</p>
                 <hr className={cl.line}/>
                 <div className={cl.skillsImg}>
-                    <img alt={"html"} src={images.html}/>
-                    <img alt={"css"} src={images.css}/>
-                    <img alt={"js"} src={images.js}/>
-                    <img alt={"react"} src={images.react}/>
+                    <img title={'HTML'} alt={"html"} src={images.html}/>
+                    <img title={'css'} alt={"css"} src={images.css}/>
+                    <img title={'javaScript'} alt={"js"} src={images.js}/>
+                    <img title={'ReactJS'} alt={"react"} src={images.react}/>
                 </div>
             </div>
         </MySection>

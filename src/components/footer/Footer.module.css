@@ -28,6 +28,10 @@
 .links img {
     height: 35px;
     filter: brightness(1000%);
+    transition: all 0.3s ease;
+}
+.links img:hover {
+    transform: scale(1.2);
 }
 
 

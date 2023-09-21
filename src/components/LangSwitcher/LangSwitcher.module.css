@@ -1,0 +1,19 @@
+.lang {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    user-select: none;
+    cursor: pointer;
+
+    color: black;
+    font-size: 1.8rem;
+
+    transition: all 0.1s ease 0s;
+}
+.lang:hover {
+    color: var(--color-accent);
+}
+.underline:hover {
+    text-decoration: underline;
+}

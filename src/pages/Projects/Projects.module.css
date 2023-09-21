@@ -2,9 +2,7 @@
     height: fit-content;
 }
 .projects h1 {
-    margin-bottom: 20px;
-
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     color: var(--font-color-gray);
 }
 .projects h2 {
