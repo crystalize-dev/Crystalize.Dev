@@ -4,6 +4,7 @@ import MySection from "../../components/section/MySection";
 import {projects} from "../../projects/projects";
 import ProjectCard from "../../components/projectCard/projectCard";
 import {useTranslation, useTranslationChange} from "i18nano";
+import {gen2} from "../../projects/gen2";
 
 
 const Projects = ({id}) => {
@@ -24,6 +25,15 @@ const Projects = ({id}) => {
                              link={project.link}
                              tags={project.tags}/>
             )}
+
+            <h1 className={cl.gen2Header}>{text("projects.gen2.header")}</h1>
+            {gen2.length  === 0 ?
+                <h2 className={cl.gen2Nothing}>
+                    {text("projects.gen2.nothing")}
+                </h2>
+                :
+                gen2.map(project => <ProjectCard key={project.name} />)
+            }
         </MySection>
     );
 };

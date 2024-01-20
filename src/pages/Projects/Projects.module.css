@@ -9,3 +9,37 @@
     color: var(--color-accent);
     font-size: 1.8rem;
 }
+
+.gen2Header {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 4rem !important;
+
+    background-color: #2AA5A0;
+    background-image: linear-gradient(90deg, red 10%, blue, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    color: transparent;
+    background-clip: text;
+    animation: gradientAnimation 5s infinite ease;
+}
+.gen2Nothing {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.6rem !important;
+    color: rgba(0,0,0,0.3)!important;
+    font-weight: normal !important;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}

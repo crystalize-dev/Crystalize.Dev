@@ -10,10 +10,9 @@
 }
 .content {
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
 
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-y: auto;
     scroll-behavior: smooth;
 }
 .content::-webkit-scrollbar {
@@ -34,6 +33,7 @@
 
     z-index: 999999999999;
 }
+
 
 
 @media (max-width: 980px) {

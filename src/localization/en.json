@@ -17,6 +17,8 @@
 
   "projects.h2": "PORTFOLIO",
   "projects.h1": "Each project is a unique piece of development",
+  "projects.gen2.header": "New generation",
+  "projects.gen2.nothing": "Coming soon...",
 
   "card.code": "Code",
   "card.live": "Live Demo ",

@@ -1,5 +1,4 @@
 import pluscomfort from "../img/projects/pluscomfort.png"
-import bestcoin from "../img/projects/bestcoin.png"
 import incar from "../img/projects/incar.png"
 
 
@@ -25,16 +24,5 @@ export const projects = [
         git: "https://github.com/crystalize-dev/PlusComfort-FurnitureStore",
         link: "https://crystalize-pluscomfort.netlify.app/",
         tags: ["React", "JS", 'Router-DOM', "React-Context", "Localization", "LocalStorage"]
-    },
-    {
-        name: "BestCoin",
-        description: {
-            en: "BestCoin is a website that allows users to search for information about various cryptocurrencies in real-time. The website is designed to provide users with accurate and up-to-date information about the price, market cap, trading volume, and other key metrics of cryptocurrencies",
-            ru: "BestCoin — это веб-сайт, который позволяет пользователям искать информацию о различных криптовалютах в режиме реального времени. Веб-сайт предназначен для предоставления пользователям точной и актуальной информации о цене, рыночной капитализации, объеме торгов и других ключевых показателях криптовалют"
-        },
-        src: bestcoin,
-        git: "https://github.com/crystalize-dev/BestCoin-CryptoSearch",
-        link: "https://crystalize-bestcoin.netlify.app/",
-        tags: ["React", "JS", "API", "Localization", "NodeJS"]
     },
 ]
