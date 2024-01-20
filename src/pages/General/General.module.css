@@ -126,7 +126,7 @@
         object-fit: contain;
     }
     .skillsImg {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         display: flex;
         justify-content: center;
         gap: 20px;

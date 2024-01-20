@@ -1,5 +1,5 @@
 .wrapper {
-    padding-top: 80px;
+    padding-top: 70px;
 
     display: flex;
     flex-direction: column;
@@ -13,6 +13,7 @@
     height: calc(100vh - 80px);
 
     overflow-y: scroll;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 .content::-webkit-scrollbar {
