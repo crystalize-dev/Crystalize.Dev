@@ -76,8 +76,12 @@
     border-radius: 50px;
 }
 .skills img {
-    min-width: 55px;
-    height: 55px;
+    min-width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+.tailwindFix {
+    transform: scale(0.8);
 }
 .skillsImg {
     display: flex;

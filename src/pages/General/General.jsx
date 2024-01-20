@@ -33,10 +33,13 @@ const General = ({id}) => {
                 <p>{text('general.tech')}</p>
                 <hr className={cl.line}/>
                 <div className={cl.skillsImg}>
-                    <img title={'HTML'} alt={"html"} src={images.html}/>
-                    <img title={'css'} alt={"css"} src={images.css}/>
-                    <img title={'javaScript'} alt={"js"} src={images.js}/>
-                    <img title={'ReactJS'} alt={"react"} src={images.react}/>
+                    <img title={'CSS'} alt={"css"} src={images.css}/>
+                    <img title={'MongoDB'} alt={"mongo"} src={images.mongo}/>
+                    <img title={'NodeJS'} alt={"nodejs"} src={images.node}/>
+                    <img title={'NextJS'} alt={"next"} src={images.next}/>
+                    <img title={'React'} alt={"react"} src={images.react}/>
+                    <img title={'Tailwind'} alt={"tailwind"} src={images.tailwind} className={cl.tailwindFix}/>
+                    <img title={'TypeScript'} alt={"ts"} src={images.ts} className={cl.tailwindFix}/>
                 </div>
             </div>
         </MySection>

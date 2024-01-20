@@ -8,8 +8,10 @@
 
     color: black;
     font-size: 1.8rem;
+    font-weight: 600;
 
     transition: all 0.1s ease 0s;
+    text-transform: capitalize;
 }
 .lang:hover {
     color: var(--color-accent);

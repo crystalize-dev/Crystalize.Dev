@@ -44,7 +44,7 @@
 .buttonText h1 {
     font-size: 2rem;
 }
-.buttonText a {
+.buttonText a, .buttonText p {
     text-decoration: none;
     color: var(--font-color-gray);
     transition: all 0.2s ease 0s;

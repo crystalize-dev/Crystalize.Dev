@@ -10,6 +10,7 @@
 
 img, a, span, i {
     user-select: none;
+    text-decoration: none;
 }
 
 #root {
